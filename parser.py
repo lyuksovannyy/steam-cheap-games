@@ -143,14 +143,16 @@ for i_ in range(pages):
 print(Fore.BLUE+"PARSED " + str(len(games)) + " GAMES.\nSAVING CARDS DATA."+Fore.RESET)
 
 # GETTING CARDS FROM GAMES #
+count = 0
 for gameid in games:
 
+	count += 1
 	time.sleep(sleep_time) # to smally avoid steam requests limitations
 
 	url = "https://steamcommunity.com/market/search?category_753_Game%5B0%5D=tag_app_" + str(gameid['id']) + "&category_753_cardborder%5B0%5D=tag_cardborder_0&&cc=" + str(currency) + "category_753_item_class%5B0%5D=tag_item_class_2&appid=753"
 
 	if detalied_actions is True:
-		print(Style.BRIGHT+Fore.BLACK+" ~ === Cards from "+gameid['name']+" === ~ "+Style.RESET_ALL)
+		print(Style.BRIGHT+Fore.BLACK+" ~ === Cards from "+gameid['name']+" ("+str(count)+") === ~ "+Style.RESET_ALL)
 
 	request = LoopRequest(url, '2', '<meta property="og:title" content="Steam Community :: Error">')
 
