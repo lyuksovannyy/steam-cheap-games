@@ -26,14 +26,14 @@ games_limit = 150 				# how many games you need to parse | 0 - until pages end.
 sleep_time = 0.3 				# time to next card info get
 								
 using_proxies = True			
-only_proxies = False 			# use this of you have good proxies or process will so slowly, for example ipvanish proxies (so good)
-IpVanish_using = False			
+only_proxies = True 			# use this of you have good proxies or process will so slowly, for example ipvanish proxies (so good)
+IpVanish_using = True			
 # IPVanish creds #				
 if IpVanish_using is True: 		# creds in https://account.ipvanish.com/index.php?t=SOCKS5%20Proxy
 	ipvanish_hosts = ['syd.socks.ipvanish.com','gig.socks.ipvanish.com','tor.socks.ipvanish.com','par.socks.ipvanish.com','fra.socks.ipvanish.com','lin.socks.ipvanish.com','nrt.socks.ipvanish.com','ams.socks.ipvanish.com','waw.socks.ipvanish.com','lis.socks.ipvanish.com','sin.socks.ipvanish.com','mad.socks.ipvanish.com','sto.socks.ipvanish.com','lon.socks.ipvanish.com','iad.socks.ipvanish.com','atl.socks.ipvanish.com','bos.socks.ipvanish.com','clt.socks.ipvanish.com','chi.socks.ipvanish.com','dal.socks.ipvanish.com','den.socks.ipvanish.com','lax.socks.ipvanish.com','mia.socks.ipvanish.com','msy.socks.ipvanish.com','nyc.socks.ipvanish.com','phx.socks.ipvanish.com','sea.socks.ipvanish.com']
-	ipvanish_port = int('port')
-	ipvanish_username = "username"
-	ipvanish_pass = "password"
+	ipvanish_port = int('1080')
+	ipvanish_username = "kstXXNq43g"
+	ipvanish_pass = "LaIK5BACn4t7"
 
 
 # SCRIPT START #
